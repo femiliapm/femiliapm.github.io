@@ -26,68 +26,114 @@
 <body>
   <!-- HERO WELCOME -->
   <section class="hero-wrapper">
-    <div>
-      <h1>Hello, I am <span>Femilia Putri</span>. I am a Fullstack Developer</h1>
-      <a href="#">Let me know</a>
-    </div>
+    <h1>Hello, I am <span>Femilia Putri</span>. I am a Fullstack Developer</h1>
+    <a href="#main" class="btn-in-touch">Get In Touch</a>
   </section>
 
-  <!-- HEADER -->
-  <header class="header-mobile">
-    <div>
-      <img src="./assets/icon/logo.svg" width="40" height="40" alt="logo">
-      <h3 class="fw-800">Femilia Putri</h3>
-    </div>
-    <!-- Burger List -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list"
-      viewBox="0 0 16 16">
-      <path fill-rule="evenodd"
-        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-    </svg>
-  </header>
-
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <h1 class="fw-800">Web Developer Enthusiast</h1>
-      <p>I'm an enthusiast of web developer and technologies</p>
-    </section>
-
-    <!-- ABOUT ME -->
-    <section id="about-me">
-      <h1 class="fw-800">About Me</h1>
-      <p>
-        A person who eager to learn, improve, and develop herself with good
-        capability in analytical and problem-solving skills. Adaptive as part of
-        the team as well as an individual worker. Have experience in making
-        an inventory web application using Java - Spring Boot and React JS
-        framework.
-      </p>
-      <div>
-        <a href="#skill">Skill & Expertise</a>
+  <section id="main">
+    <!-- HEADER -->
+    <header class="header-mobile">
+      <div class="header-item">
+        <div>
+          <img src="./assets/icon/logo.svg" width="40" height="40" alt="logo">
+          <h3 class="fw-800">Femilia Putri</h3>
+        </div>
+        <!-- Burger List -->
+        <div id="burger-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </div>
       </div>
-    </section>
 
-    <!-- FEATURED PROJECT -->
-    <section id="featured">
-      ini bagian featured project
-    </section>
+      <!-- Dropdown menu -->
+      <div class="menu-dropdown hidden" id="menu-dropdown">
+        <a href="#about-me">About Me</a>
+        <a href="">Contact Me</a>
+        <a href="./my-resume.pdf" download="resume" class="resume">Resume</a>
+      </div>
+    </header>
 
-    <!-- SKILL AND EXPERTISE -->
-    <section id="skill">
-      ini bagian skill
-    </section>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <h1 class="fw-800">Web Developer Enthusiast</h1>
+        <p>I'm an enthusiast of web developer and technologies</p>
+      </section>
 
-    <!-- GET IN TOUCH -->
-    <section>
-      ini bagian get in touch
-    </section>
-  </main>
+      <!-- ABOUT ME -->
+      <section id="about-me">
+        <h1 class="fw-800">About Me</h1>
+        <p>
+          A person who eager to learn, improve, and develop herself with good
+          capability in analytical and problem-solving skills. Adaptive as part of
+          the team as well as an individual worker. Have experience in making
+          an inventory web application using Java - Spring Boot and React JS
+          framework.
+        </p>
+        <div>
+          <a href="#skill">Skill & Expertise</a>
+        </div>
+      </section>
 
-  <!-- FOOTER -->
-  <footer>
-    ini bagian footer
-  </footer>
+      <!-- FEATURED PROJECT -->
+      <!-- <section id="featured">
+        ini bagian featured project
+      </section> -->
+
+      <!-- SKILL AND EXPERTISE -->
+      <section id="skill">
+        <h1 class="fw-800">Skill & Expertise</h1>
+        <div class="card-skill" id="prog-skill">
+          <div class="card-front">
+            <img
+              src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+              alt="code">
+            <h4 class="title">Programming & Technologies Skill</h4>
+          </div>
+
+          <div class="card-back">
+            <ul>
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>Spring Boot</li>
+              <li>ReactJS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-skill" id="prog-skill">
+          <div class="card-front">
+            <img
+              src="https://media.istockphoto.com/photos/modern-interior-server-room-data-center-connection-and-cyber-network-picture-id1297855960?b=1&k=20&m=1297855960&s=170667a&w=0&h=qpC0Z5nBUQ6NVdpeZBkLyOfY7NLc-ECzA4Jo-CLjg48="
+              alt="data">
+            <h4 class="title">Database Skill</h4>
+          </div>
+
+          <div class="card-back">
+            <ul>
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- GET IN TOUCH -->
+      <section>
+        ini bagian get in touch
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      ini bagian footer
+    </footer>
+  </section>
+
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
