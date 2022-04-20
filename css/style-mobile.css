@@ -75,10 +75,11 @@ div.menu-dropdown a {
   padding: 8px 0;
   transition: all 2s;
   -webkit-transition: all 2s;
+  font-size: 3vw;
 }
 
 div.menu-dropdown a.resume {
-  border: 1px solid var(--primary);
+  border: 0.3vw solid var(--primary);
   padding: 8px;
   width: fit-content;
   border-radius: 8px;
@@ -118,10 +119,11 @@ section#about-me p {
 
 section#about-me div a {
   color: var(--white);
+  font-size: 3vw;
 }
 
 section#about-me div {
-  border: 1px solid var(--white);
+  border: 0.3vw solid var(--white);
   padding: 8px 12px;
   width: fit-content;
   margin: 0 auto;
@@ -162,7 +164,7 @@ section#get-in-touch p {
 
 .btn-mail {
   margin: 0 auto;
-  border: 1px solid var(--white);
+  border: 0.3vw solid var(--white);
   width: fit-content;
   padding: 8px 12px;
   border-radius: 8px 14px;
@@ -170,10 +172,19 @@ section#get-in-touch p {
 
 .btn-mail a {
   color: var(--white);
+  font-size: 3vw;
 }
 
 .btn-mail:active {
   background-color: var(--white);
   color: var(--secondary);
   transition: all 0.5s;
+}
+
+/* Footer */
+footer {
+  margin-top: 12px;
+  text-align: center;
+  font-size: smaller;
+  color: var(--gray);
 }
