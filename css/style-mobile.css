@@ -10,7 +10,6 @@ section.hero-wrapper {
 }
 
 section.hero-wrapper h1 {
-  /* font-weight: bold; */
   font-size: 6vw;
   text-align: center;
 }
@@ -41,9 +40,6 @@ section.hero-wrapper .btn-in-touch {
 
 /* Header */
 header.header-mobile {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.6);
   padding: 18px;
   position: sticky;
@@ -125,10 +121,11 @@ section#about-me div a {
 }
 
 section#about-me div {
-  border: 4px solid var(--white);
-  padding: 18px 44px;
-  text-align: center;
-  border-radius: 0 8px;
+  border: 1px solid var(--white);
+  padding: 8px 12px;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 8px 14px;
 }
 
 /* Section Skill */
@@ -141,22 +138,7 @@ div.card-skill {
   margin: 20px 0;
   border-radius: 8px;
   padding: 12px;
-  /* transition: transform 0.6s;
-  transform-style: preserve-3d; */
 }
-
-/* div.card-skill:hover {
-  transform: rotateY(180deg);
-}
-
-div.card-front,
-div.card-back {
-  backface-visibility: hidden;
-}
-
-div.card-back {
-  transform: rotateY(180deg);
-} */
 
 div.card-front img {
   width: 100%;
@@ -165,4 +147,33 @@ div.card-front img {
 div.card-front h4.title {
   margin: 12px 0;
   font-weight: bold;
+}
+
+/* Section Get in Touch */
+section#get-in-touch {
+  background-color: var(--secondary);
+  color: var(--white);
+  padding: 36px 18px;
+}
+
+section#get-in-touch p {
+  margin: 20px 0;
+}
+
+.btn-mail {
+  margin: 0 auto;
+  border: 1px solid var(--white);
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 8px 14px;
+}
+
+.btn-mail a {
+  color: var(--white);
+}
+
+.btn-mail:active {
+  background-color: var(--white);
+  color: var(--secondary);
+  transition: all 0.5s;
 }
