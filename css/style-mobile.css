@@ -19,18 +19,20 @@ section.hero-wrapper h1 span {
 }
 
 section.hero-wrapper .btn-in-touch {
-  border: 0.3vw solid var(--white);
-  padding: 5px 10px;
+  border: 1px solid var(--white);
+  padding: 8px 12px;
   margin-top: 12px;
-  border-radius: 10px 4px;
+  border-radius: 14px 8px;
   color: var(--light-secondary);
   font-weight: bold;
   font-size: 3vw;
 }
 
-.btn-in-touch:active {
+.btn-in-touch:active,
+.btn-in-touch:hover {
   background: linear-gradient(45deg, var(--light-secondary), var(--white));
   color: var(--secondary) !important;
+  transition: all 0.6s;
 }
 
 /* Main Section */
@@ -79,13 +81,14 @@ div.menu-dropdown a {
 }
 
 div.menu-dropdown a.resume {
-  border: 0.3vw solid var(--primary);
+  border: 1px solid var(--primary);
   padding: 8px;
   width: fit-content;
   border-radius: 8px;
 }
 
-a.resume:active {
+a.resume:active,
+a.resume:hover {
   background-color: var(--primary);
   color: var(--white);
   transition: all 0.5s;
@@ -123,11 +126,20 @@ section#about-me div a {
 }
 
 section#about-me div {
-  border: 0.3vw solid var(--white);
+  border: 1px solid var(--white);
   padding: 8px 12px;
   width: fit-content;
   margin: 0 auto;
   border-radius: 8px 14px;
+}
+
+section#about-me div:hover,
+section#about-me div:hover a,
+section#about-me div:active,
+section#about-me div:active a {
+  background-color: var(--white);
+  color: var(--primary);
+  transition: all 0.6s;
 }
 
 /* Section Skill */
@@ -140,6 +152,18 @@ div.card-skill {
   margin: 20px 0;
   border-radius: 8px;
   padding: 12px;
+}
+
+@media screen and (min-width: 576px) {
+  div.card-skill {
+    width: 46vw;
+  }
+
+  div.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
 
 div.card-front img {
@@ -164,7 +188,7 @@ section#get-in-touch p {
 
 .btn-mail {
   margin: 0 auto;
-  border: 0.3vw solid var(--white);
+  border: 1px solid var(--white);
   width: fit-content;
   padding: 8px 12px;
   border-radius: 8px 14px;
@@ -175,7 +199,10 @@ section#get-in-touch p {
   font-size: 3vw;
 }
 
-.btn-mail:active {
+.btn-mail:active,
+.btn-mail:hover,
+.btn-mail:active a,
+.btn-mail:hover a {
   background-color: var(--white);
   color: var(--secondary);
   transition: all 0.5s;

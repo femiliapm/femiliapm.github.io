@@ -1,0 +1,29 @@
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: calc(1.375rem + 1.5vw) !important;
+    font-weight: bold;
+  }
+
+  a {
+    font-size: 1rem !important;
+    font-weight: bold;
+  }
+
+  /* Header */
+  div#burger-icon {
+    display: none;
+  }
+
+  div.menu-dropdown {
+    display: inline-block !important;
+  }
+
+  div.menu-dropdown a {
+    margin-left: 16px;
+  }
+
+  header.header-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+}
