@@ -2,144 +2,519 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Femi:)</title>
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./assets/icon/logo.svg" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Hi!</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Favicons -->
+  <link href="./assets/img/favicon.png" rel="icon">
+  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./css/global.css">
-  <link rel="stylesheet" href="./css/style-mobile.css">
-  <link rel="stylesheet" href="./css/style-desktop.css">
+  <!-- Vendor CSS Files -->
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="./assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body>
-  <!-- HERO WELCOME -->
-  <section class="hero-wrapper">
-    <h1>Hello, I am <span>Femilia Putri</span>. I am a Fullstack Developer</h1>
-    <a href="#main" class="btn-in-touch">Get In Touch</a>
-  </section>
+<body class="index-page">
 
-  <section id="main">
-    <!-- HEADER -->
-    <header class="header-mobile">
-      <div class="header-item">
-        <div>
-          <img src="./assets/icon/logo.svg" width="40" height="40" alt="logo">
-          <h3 class="fw-800">Femilia Putri</h3>
-        </div>
-        <!-- Burger List -->
-        <div id="burger-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-          </svg>
-        </div>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="./index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Portfolio</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="./assets/img/hero-img.jpg" alt="" data-aos="fade-in">
+      <!-- <img src="" alt="" data-aos="fade-in"> -->
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>I am Femilia Putri Mayranti</h2>
+        <p><span class="typed" data-typed-items="Developer, Freelancer, Technical Trainer"></span></p>
       </div>
 
-      <!-- Dropdown menu -->
-      <div class="menu-dropdown hidden" id="menu-dropdown">
-        <a href="#about-me">About Me</a>
-        <a href="#get-in-touch">Contact Me</a>
-        <a href="./my-resume.pdf" download="resume" class="resume">Resume</a>
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="./assets/img/profile-img.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Name: </strong> <span>Femilia Putri Mayranti</span></p>
+                <p><strong>Profile: </strong> <span>fullstack developer</span></p>
+                <p><strong>Email: </strong> <span>femiliaputrimayranti@gmail.com</span></p>
+                <p><strong>Phone: </strong> <span>(62) 822-9955-6875</span></p>
+              </div>
+            </div>
+
+            <div class="skills-content skills-animation">
+
+              <h5>Skills</h5>
+
+              <div class="progress">
+                <span class="skill">
+                  <span>Database : MySQL, PostgreSQL</span>
+                  <!-- <i class="val">100%</i> -->
+                </span>
+                <!-- <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div> -->
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill">
+                  <span>Programming Language : Java, JavaScript, C#</span>
+                  <!-- <i class="val">100%</i> -->
+                </span>
+                <!-- <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div> -->
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill">
+                  <span>Framework : Springboot, ASP.NET, React.Js, Express JS, Bootstrap</span>
+                  <!-- <i class="val">100%</i> -->
+                </span>
+                <!-- <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div> -->
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill">
+                  <span>Others : HTML, CSS, Hibernate, MVC, Github, Gitlab, Trello, Jira, Swagger, Postman</span>
+                  <!-- <i class="val">100%</i> -->
+                </span>
+                <!-- <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div> -->
+              </div><!-- End Skills Item -->
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p>
+                I am a driven .NET Developer with a solid foundation in software development, acquired through an intensive bootcamp and real-world experience. My expertise lies in building scalable and efficient applications, with a strong focus on backend development, database management, and full-stack solutions.
+              </p>
+              <p>
+                I am proficient in:
+              </p>
+              <p>
+                Programming Languages & Frameworks: C#, .NET, Java, Spring Boot, JavaScript, SQL Server, HTML5
+                Additionally, I am familiar with:
+              </p>
+              <p>
+                Technologies: Python, TypeScript, React.js, MySQL, PostgreSQL
+              </p>
+              <p>
+                During my career journey, I have successfully worked on projects involving full-stack development using the .NET framework, Java-based microservices, and front-end interfaces. My passion lies in delivering robust, user-friendly applications while continuously expanding my skill set in the latest tools and technologies.
+              </p>
+              <p>
+                Whether collaborating with cross-functional teams or working independently, I am committed to writing clean, maintainable code that meets business goals and user needs.
+              </p>
+              <p>
+                Let’s connect to discuss technology, projects, and opportunities!
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </header>
 
-    <main>
-      <!-- HERO -->
-      <section class="hero">
-        <h1 class="fw-800">Web Developer Enthusiast</h1>
-        <p>I'm an enthusiast of web developer and technologies</p>
-      </section>
+    </section><!-- /About Section -->
 
-      <!-- ABOUT ME -->
-      <section id="about-me">
-        <h1 class="fw-800">About Me</h1>
-        <p>
-          A person who eager to learn, improve, and develop herself with good
-          capability in analytical and problem-solving skills. Adaptive as part of
-          the team as well as an individual worker. Have experience in making
-          an inventory web application using Java - Spring Boot and React JS
-          framework.
-        </p>
-        <div>
-          <a href="#skill">Skill & Expertise</a>
-        </div>
-      </section>
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
 
-      <!-- SKILL AND EXPERTISE -->
-      <section id="skill">
-        <h1 class="fw-800">Skill & Expertise</h1>
-        <div class="card-group">
-          <div class="card-skill" id="prog-skill">
-            <div class="card-front">
-              <img
-                src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
-                alt="code">
-              <h4 class="title">Programming & Technologies Skill</h4>
-            </div>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+      </div><!-- End Section Title -->
 
-            <div class="card-back">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>XSIS Academy</h4>
+              <p><em>Passionate about coding and development with a solid foundation in .NET development as a bootcamp graduate. Bringing 3 years of experience as a Technical Trainer specializing in Java Springboot, mentoring aspiring developers and delivering impactful training programs.</em></p>
               <ul>
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>Spring Boot</li>
-                <li>ReactJS</li>
+                <li>Kebayoran Lama, Jakarta, Indonesia</li>
+                <li>(62) 822-9955-6875</li>
+                <li>femiliaputrimayranti@gmail.com</li>
               </ul>
-            </div>
-          </div>
-          <div class="card-skill" id="db-skill">
-            <div class="card-front">
-              <img
-                src="https://media.istockphoto.com/photos/modern-interior-server-room-data-center-connection-and-cyber-network-picture-id1297855960?b=1&k=20&m=1297855960&s=170667a&w=0&h=qpC0Z5nBUQ6NVdpeZBkLyOfY7NLc-ECzA4Jo-CLjg48="
-                alt="data">
-              <h4 class="title">Database Skill</h4>
-            </div>
+            </div><!-- Edn Resume Item -->
 
-            <div class="card-back">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Science</h4>
+              <h5>2015 - 2019</h5>
+              <p><em>Universitas Indonesia, Jakarta, Indonesia</em></p>
+              <p>Thesis : “Prediction System of Total Phenolic Compounds of (Diospyros discolour Willd.) Leaf on Visible and Near Infrared (VNIR) Images.”</p>
+              <p>
+                Publications :
               <ul>
-                <li>MySQL</li>
-                <li>PostgreSQL</li>
-                <li>MongoDB</li>
+                <li>
+                  Chlorophyll A and B Content Measurement System of Velvet Apple Leaf in Hyperspectral Imaging – 2019 – IEEE
+                </li>
+                <li>
+                  Wavelength Selection of Persimmon Leaf using Decision Tree Methods in Visible Near-Infrared Imaging – 2019 - IEEE
+                </li>
               </ul>
+              </p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Fullstack Java Springboot Trainer</h4>
+              <h5>Nov 2020 - Apr 2024</h5>
+              <p><em>Fazztrack, Jakarta, Indonesia </em></p>
+              <ul>
+                <li>Compiled IT training and assessment resources based on understanding of technical processes and skills-development needs.</li>
+                <li>Led syllabus preparation based on detailed breakdowns of technical concepts. </li>
+                <li>Created curricula, instructions, documents and written tests for various types of training courses.</li>
+                <li>Programming application using TypeScript, React, and Springboot.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Java Technical Consultant Program</h4>
+              <h5>Jul 2020 - Oct 2020</h5>
+              <p><em>Prodemy Prosigmaka, Jakarta, Indonesia</em></p>
+              <ul>
+                <li>Trainee as a Java Springboot Developer.</li>
+                <li>Create and develop an inventory web application using Java Springboot and ReactJS.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-code"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Web Developer</h3>
+              </a>
+              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
             </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section accent-background">
+
+      <img src="./assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <!-- <li data-filter=".filter-product">Product</li>
+            <li data-filter=".filter-branding">Branding</li>
+            <li data-filter=".filter-books">Books</li> -->
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="./assets/img/portfolio/app-1.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>SmartSpender</h4>
+                <p>An web application for help tracking financial stuff. Tracking incomes and expenses with easy.</p>
+                <a href="./assets/img/portfolio/app-1.jpeg" title="SmartSpender" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details-smartspender.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 1</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div> -->
+            <!-- End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Branding 1</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div> -->
+            <!-- End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Books 1</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div> -->
+            <!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Kebayoran Lama, Jakarta, Indonesia 12210</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+62 822 9955 6875</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>femiliaputrimayranti@gmail.com</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
           </div>
         </div>
-      </section>
 
-      <!-- GET IN TOUCH -->
-      <section id="get-in-touch">
-        <h1 class="fw-800">Get in Touch</h1>
-        <p>
-          My inbox is always open if you have any questions or say Hi to me. Feel free to mail me any relevant job
-          updates and
-          want to collaborate with me. Thanks
-        </p>
-        <div class="btn-mail">
-          <a href="mailto:femiliaputrimayranti@gmail.com">Mail Me</a>
-        </div>
-      </section>
-    </main>
+        <!-- <form action="./forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
 
-    <!-- FOOTER -->
-    <footer>
-      femiliapm &copy; 2022
-    </footer>
-  </section>
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+            </div>
 
-  <script src="./js/script.js"></script>
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+
+          </div>
+        </form> -->
+        <!-- End Contact Form -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">DevFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://x.com/femilliaputtri"><i class="bi bi-twitter-x"></i></a>
+        <!-- <a href=""><i class="bi bi-facebook"></i></a> -->
+        <a href="https://www.instagram.com/femiliapm"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/femiliaputrimayranti/"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/vendor/php-email-form/validate.js"></script>
+  <script src="./assets/vendor/aos/aos.js"></script>
+  <script src="./assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="./assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="./assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="./assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="./assets/js/main.js"></script>
+
 </body>
 
 </html>
